@@ -8,37 +8,59 @@
   body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
   h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.8rem; }
   @media (prefers-color-scheme: dark) { body { background: #0c0a1e; color: #ddd; } a { color: #9fd0ff; } }
-</style>
+/* site-nav */
+  .nav { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: 1rem;
+         padding: 0.7rem 1.1rem; background: rgba(10, 8, 26, 0.92); backdrop-filter: blur(8px);
+         border-bottom: 1px solid #2b2752; flex-wrap: wrap; }
+  .nav .brand { font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+                font-size: 0.86rem; color: #fff; text-decoration: none; white-space: nowrap; }
+  .nav .links { display: flex; gap: 1rem; margin-left: auto; flex-wrap: wrap; align-items: center; }
+  .nav .links a { font-size: 0.86rem; color: #b9b5d0; text-decoration: none; padding-bottom: 2px;
+                  border-bottom: 2px solid transparent; }
+  .nav .links a:hover { color: #e8e6f0; }
+  .nav .links a.on { color: #9fd0ff; border-bottom-color: #9fd0ff; }
+  @media (max-width: 560px) {
+    .nav { gap: 0.5rem; padding: 0.6rem 0.8rem; }
+    .nav .links { margin-left: 0; width: 100%; gap: 0.85rem; justify-content: space-between; }
+    .nav .links a { font-size: 0.8rem; }
+  }
+  footer { text-align: center; padding: 2.4rem 1.5rem 3rem; color: #8d89a8; font-size: 0.9rem;
+           border-top: 1px solid #2b2752; background: transparent; }
+  footer a { color: #9fd0ff; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  footer .flinks { margin-bottom: 0.6rem; }
+/* end site-nav */</style>
 </head>
 <body>
+<!-- site-nav --><nav class="nav"><a class="brand" href="index.html">Idle Spaceweaver</a><span class="links"><a href="index.html">Home</a><a href="testing.html">Community</a><a href="help.html">Help</a><a href="101.html">Idle 101</a></span></nav>
 <h1>Privacy Policy - Idle Spaceweaver</h1>
 <p><em>Effective date: 4 August 2026</em></p>
 
-<p>Idle Spaceweaver ("the app", package name and bundle identifier <code>dev.timwelch.idlespaceweaver</code>) is developed by Timothy Welch ("I", "me"). It is available on Android through Google Play and on iOS through the Apple App Store. This policy explains what data the app handles on both platforms. The short version: <strong>the app collects no personal data, and I never receive any of your data.</strong></p>
+<p>Idle Spaceweaver ("the app", package name and bundle identifier <code>dev.timwelch.idlespaceweaver</code>) is developed by Timothy Welch ("I", "me"). It is available on Android through Google Play and on iOS through the Apple App Store. This policy explains what data the app handles on both platforms. The short version: <strong>the app collects no personal data and I never receive any of your data.</strong></p>
 
 <h2>Data collection</h2>
-<p>The app does not collect, store, or transmit any personal information to me. There is no sign-up, no analytics, no advertising, and no tracking of any kind. The app does not require internet access to play. The only online features are the optional in-app purchases and the optional cloud backup described below.</p>
+<p>The app does not collect, store, or transmit any personal information to me. There is no sign-up, no analytics, no advertising and no tracking of any kind. The app does not require internet access to play. The only online features are the optional in-app purchases and the optional cloud backup described below.</p>
 
 <h2>Game saves</h2>
 <p>Your game progress is stored on your own device. If you use the backup-code feature, the code is generated on your device and it is your choice where to keep or share it. No copy is sent to me or to any server of mine. This feature works the same way on both Android and iOS.</p>
 
 <h2>Cloud backup</h2>
 <p>The app can back up your game progress to your own platform account, so your progress survives a reinstall or a move to a new device. On Android this uses Google Play Games cloud saves. On iOS it uses Game Center saved games, which keep the backup in your iCloud account and need iCloud Drive switched on. You can connect from the Settings screen, or simply never use it - the game is fully playable without it. On Android, if Google Play Games is already set up on your device, sign-in may happen automatically at startup.</p>
-<p>The backup contains only your game progress - the same data as a manual backup code. It is stored in your own Google account or your own Apple Account, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> or the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. I operate no server and cannot see, access, or receive your saves, and the app does not receive or store your name, email address, or other account details. The app does not use achievements, leaderboards, or any other social feature on either platform.</p>
-<p>The Android and iOS backups are completely separate. A backup made on Android does not appear on iOS, and the other way round. Moving progress between the two platforms is done with a backup code.</p>
+<p>The backup contains only your game progress - the same data as a manual backup code. It is stored in your own Google account or your own Apple Account, under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> or the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>. I operate no server and cannot see, access, or receive your saves and the app does not receive or store your name, email address, or other account details. The app does not use achievements, leaderboards, or any other social feature on either platform.</p>
+<p>The Android and iOS backups are completely separate. A backup made on Android does not appear on iOS and the other way round. Moving progress between the two platforms is done with a backup code.</p>
 <p>Resetting your game from the Settings screen also deletes the cloud backup. You can review or remove data that apps store in your Google account or Apple Account at any time through that account's own settings.</p>
 
 <h2 id="data-deletion">Deleting your data</h2>
 <p>You can delete all data the app handles yourself, without contacting anyone:</p>
 <ul>
 <li><strong>Game progress on your device:</strong> use "Reset Game" on the Settings screen. This also deletes the cloud backup from your Google account or Apple Account. Deleting the app removes its local data on both platforms.</li>
-<li><strong>Play Games profile data held by Google (Android):</strong> follow Google's guide to <a href="https://support.google.com/googleplay/answer/9016557">delete your Play Games profile and data</a>. There you can remove the data for this game alone or delete the whole profile.</li>
+<li><strong>Play Games profile data held by Google (Android):</strong> follow Google's guide to <a href="https://support.google.com/googleplay/answer/9016557" target="_blank" rel="noopener">delete your Play Games profile and data</a>. There you can remove the data for this game alone or delete the whole profile.</li>
 <li><strong>Saved game data held by Apple (iOS):</strong> on your device open Settings, tap your name, then iCloud, then Manage Account Storage. Deleting the app's data there removes the backup. Records of purchases are held by Apple under your Apple Account, not by me.</li>
 </ul>
-<p>If you need any help with this, email <strong>IdleSpaceweaver@gmail.com</strong> and I will assist with deleting your data.</p>
+<p>If you need any help with this, email <strong>support@idlespaceweaver.com</strong> and I will assist with deleting your data.</p>
 
 <h2>In-app purchases</h2>
-<p>The app offers optional in-app purchases. These are processed entirely by the store you installed the app from: by Google Play on Android, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and by Apple on iOS, under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. Payment is handled by that store and never by me. I do not receive your name, address, or payment details, only an anonymous confirmation that a purchase was made, which is stored on your device to unlock the purchased item.</p>
+<p>The app offers optional in-app purchases. These are processed entirely by the store you installed the app from: by Google Play on Android, under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and by Apple on iOS, under the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>. Payment is handled by that store and never by me. I do not receive your name, address, or payment details, only an anonymous confirmation that a purchase was made, which is stored on your device to unlock the purchased item.</p>
 
 <h2>Notifications</h2>
 <p>If you grant notification permission, the app schedules reminders locally on your device (for example, when your offline progress is full). These are generated on-device on both Android and iOS; no push-notification service is used.</p>
@@ -50,6 +72,7 @@
 <p>If a future update changes how the app handles data, this page will be updated and the effective date revised before that update is released.</p>
 
 <h2>Contact</h2>
-<p>Questions about this policy or the app: <strong>IdleSpaceweaver@gmail.com</strong></p>
+<p>Questions about this policy or the app: <strong>support@idlespaceweaver.com</strong></p>
+<footer><div class="flinks"><a href="index.html">Home</a> &middot; <a href="testing.html">Community</a> &middot; <a href="help.html">Help</a> &middot; <a href="101.html">Idle 101</a></div><div>Questions? <a href="https://discord.gg/2PbyKZnvkb" target="_blank" rel="noopener">Ask on the Discord</a>.</div><div>&copy; 2026 Timothy Welch</div></footer>
 </body>
 </html>

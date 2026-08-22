@@ -35,9 +35,31 @@
   footer { text-align: center; padding: 2.5rem 1.5rem 3rem; margin-top: 3rem; color: #8d89a8; font-size: 0.9rem; border-top: 1px solid #2b2752; }
   footer a { color: #9fd0ff; text-decoration: none; }
   footer a:hover { text-decoration: underline; }
-</style>
+/* site-nav */
+  .nav { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: 1rem;
+         padding: 0.7rem 1.1rem; background: rgba(10, 8, 26, 0.92); backdrop-filter: blur(8px);
+         border-bottom: 1px solid #2b2752; flex-wrap: wrap; }
+  .nav .brand { font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+                font-size: 0.86rem; color: #fff; text-decoration: none; white-space: nowrap; }
+  .nav .links { display: flex; gap: 1rem; margin-left: auto; flex-wrap: wrap; align-items: center; }
+  .nav .links a { font-size: 0.86rem; color: #b9b5d0; text-decoration: none; padding-bottom: 2px;
+                  border-bottom: 2px solid transparent; }
+  .nav .links a:hover { color: #e8e6f0; }
+  .nav .links a.on { color: #9fd0ff; border-bottom-color: #9fd0ff; }
+  @media (max-width: 560px) {
+    .nav { gap: 0.5rem; padding: 0.6rem 0.8rem; }
+    .nav .links { margin-left: 0; width: 100%; gap: 0.85rem; justify-content: space-between; }
+    .nav .links a { font-size: 0.8rem; }
+  }
+  footer { text-align: center; padding: 2.4rem 1.5rem 3rem; color: #8d89a8; font-size: 0.9rem;
+           border-top: 1px solid #2b2752; background: transparent; }
+  footer a { color: #9fd0ff; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  footer .flinks { margin-bottom: 0.6rem; }
+/* end site-nav */</style>
 </head>
 <body>
+<!-- site-nav --><nav class="nav"><a class="brand" href="index.html">Idle Spaceweaver</a><span class="links"><a href="index.html">Home</a><a href="testing.html">Community</a><a href="help.html">Help</a><a href="101.html" class="on">Idle 101</a></span></nav>
 <section class="hero">
   <h1>Idle Spaceweaver 101</h1>
   <p class="tagline">New to idle games? Everything you need, in eight little cards.</p>
@@ -241,15 +263,13 @@
 
 <section class="center">
   <h2 class="section-title">Ready to try one?</h2>
-  <p class="section-sub">Idle Spaceweaver is free and genuinely fair - no ads, no gems, no energy timers - and it's in early access on Android and iOS right now.</p>
-  <a class="btn" href="testing.html">🚀 Get the game</a>
+  <p class="section-sub">Idle Spaceweaver is free and genuinely fair - no ads, no gems, no energy timers - and it's on Google Play and the App Store.</p>
+  <a class="btn" href="index.html#get">🚀 Get the game</a>
   &nbsp;
-  <a class="btn ghost" href="index.html">About the game</a>
+  <a class="btn ghost" href="testing.html">Join the community</a>
 </section>
 
-<footer>
-  <p>Made by one person, no studio. <a href="index.html">About the game</a> · <a href="testing.html">Get the game</a> · <a href="privacy.html">Privacy policy</a></p>
-  <p>© 2026 Timothy Welch</p>
-</footer>
+
+<footer><div class="flinks"><a href="index.html">Home</a> &middot; <a href="testing.html">Community</a> &middot; <a href="help.html">Help</a> &middot; <a href="privacy.html">Privacy policy</a></div><div>Questions? <a href="https://discord.gg/2PbyKZnvkb" target="_blank" rel="noopener">Ask on the Discord</a>.</div><div>&copy; 2026 Timothy Welch</div></footer>
 </body>
 </html>
