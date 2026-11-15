@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Farmweaver - a light-survival and cosy farming game</title>
-<meta name="description" content="Crash-land on Verdania, a quiet green island. Explore, gather, build a farm, keep animals and meet the villagers. No fighting. Free and open to testers on Android and iPhone.">
-<meta property="og:title" content="Farmweaver - a light-survival and cosy farming game">
-<meta property="og:description" content="Crash-land on Verdania, a quiet green island. Explore, gather, build a farm, keep animals and meet the villagers. No fighting. Free and open to testers on Android and iPhone.">
+<title>Farmweaver - a cosy exploration and crafting game with farming</title>
+<meta name="description" content="A world has lost its colour. Explore, craft and mend its creatures as you uncover twelve mysterious threads and restore a forgotten island.">
+<meta property="og:title" content="Farmweaver - a cosy exploration and crafting game with farming">
+<meta property="og:description" content="A world has lost its colour. Explore, craft and mend its creatures as you uncover twelve mysterious threads and restore a forgotten island.">
 <meta property="og:type" content="website">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -120,6 +120,13 @@
   .farmpage .btn.solid { background: #f2b33d; color: #1b2317; }
   .farmpage .btn.solid:hover { background: #ffd07a; }
   .farmpage .shots img { image-rendering: pixelated; }
+  .farmpage .farmintro { margin-top: 2rem; }
+  .farmpage .farmintro .lede { margin: 0 auto 0.9rem; }
+  .farmpage .woven .grid.four { grid-template-columns: repeat(4, 1fr); }
+  .farmpage .woven h3 { color: #ffd98a; }
+  .farmpage .woven .close { margin-top: 1.6rem; }
+  @media (max-width: 1000px) { .farmpage .woven .grid.four { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .farmpage .woven .grid.four { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -129,31 +136,46 @@
 <section class="hero tall farm" id="get">
   <img class="strips" src="screenshots/farm/hero.jpg" alt="Farmweaver: the farm, the animals and the woods at night">
   <h1>Farmweaver</h1>
-  <p class="tagline">Survive, Farm, Weave</p>
-  <p class="fairline">No energy timers &middot; No premium gems &middot; No ads &middot; No pay-to-win</p>
+  <p class="tagline">A world waiting to be mended.</p>
+  <p class="fairline">Free to play &middot; Play offline &middot; No gems &middot; No energy timers &middot; No combat or killing</p>
   <div class="buttons">
     <a class="btn solid" href="testing.html#farmweaver-android">Android: open testing</a>
     <a class="btn" href="testing.html#farmweaver-ios">iPhone: TestFlight</a>
   </div>
 </section>
 
+<div class="wrap center farmintro"><p class="lede">A world has lost its colour. It's time to weave it back together.</p><p class="lede">Your ship has crashed on a strange island. The land is fading, its creatures are tangled and lost and something has gone terribly wrong.</p><p class="lede">You have a needle. That's where your journey begins.</p><p class="lede">Explore a beautiful pixel-art world, gather resources, grow crops, craft tools and mend the creatures you meet. Restore forgotten places, uncover hidden secrets and bring colour back to an island that needs your help.</p><p class="lede">There are no enemies to defeat and nothing to kill. In Farmweaver, you don't destroy the world. You mend it.</p></div>
+
+<section class="band woven">
+  <div class="wrap">
+    <div class="center">
+      <h2 class="sec">A World Woven Together</h2>
+      <p class="lede">Farmweaver is a cosy exploration and crafting game with farming, with a world built around the magic of threads and weaving. It is not about fighting the world. It is about mending it.</p>
+    </div>
+    <div class="grid four"><div class="card"><h3>Mending, not fighting</h3><p>Find the Frayed, mysterious creatures that have lost their way. They are not monsters to beat. Trace the knot with your needle and they are themselves again, bringing life back to the world. Once mended, they stay mended. Nothing in Farmweaver is ever killed.</p></div><div class="card"><h3>The Waylooms</h3><p>Feed ancient Waylooms with the food you grow to awaken them and unlock new places to explore. Discover forgotten paths, travel between the island's different regions and uncover the secrets hidden within them.</p></div><div class="card"><h3>The Keeper</h3><p>Under a great red tree in the Autumn wood, the Keeper keeps a green light burning. Every kind of Frayed you mend sends one of its kind to live in the Keeper's clearing and adds a new coloured thread circling the Keeper.</p></div><div class="card"><h3>Twelve threads</h3><p>At night, a sky manta drifts over the island and leaves you gifts: first a weaver's thimble, then threads, one at a time. There are twelve, each with its own colour, name and marking. Gather them all and see where they lead.</p></div><div class="card"><h3>Your Loom</h3><p>Weaving is more than just a theme. Your Loom grows with you. Find the patterns hidden around the island and learn new ways to get about: swim across lakes, build bridges, glide downhill and more.</p></div><div class="card"><h3>Your cloth</h3><p>Each day, a colourful new row is woven into your cloth, recording the things you did and the adventures you had. Every crop grown, creature mended and discovery made becomes part of your story.</p></div><div class="card"><h3>The Grand Loom</h3><p>Hidden in a thicket somewhere on the island is the Grand Loom. Over a hundred things you find on your travels are woven into its tapestry, so it fills in as your journey goes on.</p></div><div class="card"><h3>Bring back the colour</h3><p>Five places on the island have gone completely grey. Find the grey tree at the heart of each one, mend it and watch the colour spread back across the land.</p></div></div>
+    <p class="lede center close"><strong>Grow your world. Mend what is broken. Weave your own adventure.</strong><br>That's Farmweaver.</p>
+  </div>
+</section>
+
 <div class="wrap">
-  <div class="grid"><div class="card"><div class="em">🛸</div><h3>Stranded on Verdania</h3><p>Your ship crash-lands on a quiet green island, then blows up. No tools, no shelter and no way home. So you make a life there instead.</p></div><div class="card"><div class="em">🌻</div><h3>Grow, gather and fish</h3><p>Grow crops, chop trees, mine for stone and ore and gather materials as you explore. Fish in lots of different places, with 25 kinds to catch.</p></div><div class="card"><div class="em">🐄</div><h3>Animals and pets</h3><p>Keep hens, ducks, sheep, cows and pigs, plus a horse you can ride. You can make one of them your pet, too.</p></div><div class="card"><div class="em">🏡</div><h3>Build and decorate</h3><p>Build a house, a coop and a barn, then fill them with over 100 pieces of furniture. Make tools and goods at 7 workshops.</p></div><div class="card"><div class="em">🗺️</div><h3>One big island to explore</h3><p>9 areas, from the shore to a snowfield and a volcano, then a far island. Travel for free between 15 Waylooms.</p></div><div class="card"><div class="em">🏘️</div><h3>Meet the villagers</h3><p>Over 40 villagers to get to know and you can visit them in their homes.</p></div><div class="card"><div class="em">🕯️</div><h3>Caves, a mine and a tomb</h3><p>Head underground with keys, gates and a guardian waiting at the end.</p></div><div class="card"><div class="em">🧵</div><h3>No fighting, ever</h3><p>At night the Frayed come out. You don't fight them, you mend them with a needle by touching the dots of a knot in order. Fail and you simply try again.</p></div><div class="card"><div class="em">🌙</div><h3>At your own pace</h3><p>Choose how long a day and a night last, or keep it always day or always night. Plays offline, with optional cloud saves and 13 accessibility settings.</p></div></div>
+  <div class="grid"><div class="card"><div class="em">🗺️</div><h3>Explore</h3><p>Discover ten unique areas across a large island, from colourful woodland to mysterious underground caves and mines. Find hidden rooms, collect local resources and uncover the secrets of each place.</p></div><div class="card"><div class="em">🌻</div><h3>Farm &amp; craft</h3><p>Grow crops, raise animals and cook meals. Gather wood and stone, build workshops and work your way through thirteen levels of tools and equipment. There's always something new to make or discover.</p></div><div class="card"><div class="em">🧵</div><h3>Restore the world</h3><p>Find the ancient Waylooms hidden throughout the island and bring them what they need to open new areas. Mend the Frayed creatures you encounter and watch them regain their colour. Seek out the five patches of complete grey and restore the trees at their heart.</p></div><div class="card"><div class="em">🍁</div><h3>Meet the Keeper</h3><p>Deep in the Autumn wood, beneath a great red tree, the Keeper waits. Every kind of Frayed you mend adds another coloured thread to their collection. At night, a mysterious sky manta brings you threads of your own. Twelve threads, each with its own colour, name and marking, are waiting to be discovered.</p></div><div class="card"><div class="em">🏡</div><h3>Make your own world</h3><p>Meet villagers, visit their homes, trade and complete more than 300 quests. Go fishing, befriend wild animals, keep pets and decorate your home. Explore in different weather, discover things that only appear at night and enjoy the changing world around you.</p></div><div class="card"><div class="em">🏝️</div><h3>A journey with an ending</h3><p>Farmweaver has a real ending to discover. Restore the first island, uncover its secrets and eventually travel to a second island, where the final Frayed are waiting. And even when the journey is complete, there's still a world to enjoy.</p></div></div>
 </div>
 
 <section class="band">
   <div class="wrap tight">
     <div class="center"><h2 class="sec">A look at the game</h2>
     <p class="lede swipehint">Swipe or scroll sideways.</p></div>
-    <div class="shots"><figure><img loading="lazy" src="screenshots/farm/shot-1.jpg" alt="Build a farm on a strange new world"><figcaption>Build a farm on a strange new world</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-2.jpg" alt="Grow crops and bring in the harvest"><figcaption>Grow crops and bring in the harvest</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-3.jpg" alt="Keep animals and fence your fields"><figcaption>Keep animals and fence your fields</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-4.jpg" alt="At night, mend the Frayed. No fighting, ever"><figcaption>At night, mend the Frayed. No fighting, ever</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-5.jpg" alt="Meet the villagers in their homes"><figcaption>Meet the villagers in their homes</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-6.jpg" alt="Explore one big island, place by place"><figcaption>Explore one big island, place by place</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-7.jpg" alt="Go fishing. There are 25 kinds of fish"><figcaption>Go fishing. There are 25 kinds of fish</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-8.jpg" alt="From quiet woods to a volcano"><figcaption>From quiet woods to a volcano</figcaption></figure></div>
+    <div class="shots"><figure><img loading="lazy" src="screenshots/farm/shot-1.jpg" alt="Grow crops and keep animals"><figcaption>Grow crops and keep animals</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-2.jpg" alt="Explore ten areas across one big island"><figcaption>Explore ten areas across one big island</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-3.jpg" alt="At night, mend the Frayed. No fighting, ever"><figcaption>At night, mend the Frayed. No fighting, ever</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-4.jpg" alt="Bring colour back to the five grey places"><figcaption>Bring colour back to the five grey places</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-5.jpg" alt="Meet the Keeper in the Autumn wood"><figcaption>Meet the Keeper in the Autumn wood</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-6.jpg" alt="Find all twelve threads"><figcaption>Find all twelve threads</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-7.jpg" alt="Go fishing all over the island"><figcaption>Go fishing all over the island</figcaption></figure><figure><img loading="lazy" src="screenshots/farm/shot-8.jpg" alt="Visit villages full of people"><figcaption>Visit villages full of people</figcaption></figure></div>
   </div>
 </section>
 
 <div class="wrap center">
   <h2 class="sec">Free, with one optional purchase</h2>
   <p class="lede">The whole game is free. The Supporter Pack is a one-off purchase
-    that adds more worlds to save and lets you line up five jobs in a row, not
-    three. That's it. There are no ads.</p>
+    that adds three more worlds, copying a world into an empty slot, five jobs in
+    a row instead of three, photo mode, a photo album of your farm, saved outfits,
+    a golden scarecrow and neckerchiefs and bed colours for your pet. Nothing in
+    it saves time or gives you resources. There are no ads.</p>
 </div>
 
 <section class="band">
